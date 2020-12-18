@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "mse"
+  "defaultProject": "mse",
+  "cli": {
+    "analytics": "06422994-6212-471d-88d4-dc71d0d8157b"
+  }
 }
