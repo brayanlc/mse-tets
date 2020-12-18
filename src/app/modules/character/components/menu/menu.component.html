@@ -1,0 +1,11 @@
+<ul class="menu">
+  <li
+    *ngFor="let menuItem of menu | keyvalue"
+    (click)="onSelectedHouse(menuItem.key)"
+    [class.clicked]="clicked === menuItem.key"
+    class="menu-item"
+  >
+    {{ menuItem.key | removeEmptyNames }}
+    <span class="qty">Qty. {{ menuItem.value }}</span>
+  </li>
+</ul>

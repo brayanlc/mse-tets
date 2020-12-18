@@ -1,0 +1,25 @@
+.menu {
+  .menu-item {
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+
+    &:hover {
+      border-right: 3px #1c52d9 solid;
+      background: rgba(127, 257, 212, 0.3);
+    }
+
+    &.clicked {
+      border-right: 3px #1c52d9 solid;
+      background: rgba(127, 257, 212, 0.3);
+    }
+
+    .qty {
+      background-color: rgb(16, 142, 233);
+      color: white;
+      padding: 3px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+  }
+}
