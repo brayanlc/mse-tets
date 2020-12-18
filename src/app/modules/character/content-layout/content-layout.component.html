@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="menu">
+    <app-menu
+      [menu]="houses$ | async"
+      (selectedHouse)="getByName($event)"
+    ></app-menu>
+  </div>
+  <div class="content">
+    <input type="text" placeholder="Search..." [formControl]="filterName" />
+    <app-character [characters]="characters"></app-character>
+  </div>
+</div>
